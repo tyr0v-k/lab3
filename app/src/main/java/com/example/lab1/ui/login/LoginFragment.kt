@@ -78,6 +78,6 @@ class LoginFragment : Fragment() {
             return
         }
         Log.d("LOGIN_LOGGER","Successfully logged in")
-        (activity as? MainActivity)?.navigateTo(HomeFragment())
+        (activity as? MainActivity)?.navigateTo(HomeFragment(), false)
     }
 }

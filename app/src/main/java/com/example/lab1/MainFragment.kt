@@ -42,7 +42,7 @@ class MainFragment : Fragment() {
 
         binding.getStartedButton.setOnClickListener {
             Log.d("MAIN_LOGGER","Main fragment finished at " + Calendar.getInstance().time)
-            (activity as? MainActivity)?.navigateTo(LoginFragment())
+            (activity as? MainActivity)?.navigateTo(LoginFragment(), false)
         }
 
         Log.d("MAIN_LOGGER","Main fragment created at " + Calendar.getInstance().time)

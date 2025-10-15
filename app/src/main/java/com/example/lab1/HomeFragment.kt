@@ -69,6 +69,7 @@ class HomeFragment : Fragment() {
         )
 
         val recyclerView = binding.recyclerView
+        recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = ItemAdapter(itemsLists)
         Log.d("HOME_LOGGER","Home fragment started at " + Calendar.getInstance().time)
         return binding.root
